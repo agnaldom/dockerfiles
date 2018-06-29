@@ -67,7 +67,8 @@ spotify(){
         -v $HOME/.spotify/config:/home/spotify/.config/spotify \
         -v $HOME/.spotify/cache:/home/spotify/spotify \
 		--name spotify \
-		${DOCKER_REPO_PREFIX}/spotify
+		agnaldoneto/spotify
+		#${DOCKER_REPO_PREFIX}/spotify
 }
 
 slack(){
